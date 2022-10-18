@@ -1,0 +1,26 @@
+/* --------- Global style */
+
+body {
+    background-color: white;
+    font-family: "Raleway", sans-serif;
+    color: #445361;
+    text-align: center;
+}
+/* ----------- Logo */
+.header {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* --------- Main */
+
+.h1 {
+    height: 40px;
+    padding-right: 5px;
+}
+.p {
+    background-color: white;
+    font-family: "Raleway", sans-serif;
+    color: #445361;
+    text-align: center;
+}
