@@ -26,20 +26,23 @@ header {
     background-color: none;
 }
 
-/* --------- Main */
+/* --------- Main */ 
 #greeting {
-    background-color: darkgreen;
+    background-color: rgb(0, 100, 0, 0.5);
     background-size: cover;
     background-position: center;
     padding: 40px;
     min-height: 60vh;
+    margin: 30px;
+    
 }
 #start-game {
-    background-color: royalblue;
+    background-color: rgb(65, 105, 225, 0.5);
     background-size: cover;
     background-position: center;
     padding: 40px;
     min-height: 60vh;
+    margin: 30px;
 }
 .h2 {
     height: 40px;
