@@ -13,26 +13,26 @@
 </head>
 <body>
     <header>
-        Must See Places
+        <a href="index.html">
+            <h1 id="logo">Must See Places</h1>
+        </a>
+        
     </header>
     <main>
         <section id="greeting"> 
-            <h1> WELCOME </h1>
-            <p> About this quiz.....</p>
+            <h1> WELCOME </h1>      
+            <h3> About this quiz.....</h3>
         </section>
         <section id="start-game">
-            <span id="username"> create a username </span>
-            <span> <form></form> </span>
-            <span id="email"> your e-mail address </span>
-            <span> <form></form> </span>
+            <label class="create-username"> Create a username </label>
+            <input class="form-input" username="username" id="username" type="text" required/>
+            <button class="lets-go">Start</button>
         </section>
-        <section>
-            <span id="button"> <button>start</button> </span>
-        </section>
+    
     </main>
     <script src="assets/js/script.js"></script>
 </body>
-<footer>
+<footer class="by">
     Created by Ozlem Hafalir
 </footer>
 </html>
