@@ -33,7 +33,7 @@ header {
     background-position: center;
     padding: 40px;
     min-height: 60vh;
-    margin: 30px;
+    margin: 50px;
     
 }
 #start-game {
@@ -42,7 +42,7 @@ header {
     background-position: center;
     padding: 40px;
     min-height: 60vh;
-    margin: 30px;
+    margin: 50px;
 }
 .h2 {
     height: 40px;
@@ -71,3 +71,10 @@ header {
     text-align: center;
     font-size: 18px;
 }
+/* ----------- Quiz Page */
+ul li {
+    list-style: none;
+}
+
+
+/* ----------- Score Page */
