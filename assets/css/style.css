@@ -61,16 +61,24 @@ header {
     font-size: 20px;
 
 }
-.form-input {
+.form-input[type=text]:focus {
     width: 350px;
     text-align: left;
+    border: 3px solid #555;
+    
 }
 .lets-go {
-    font-family: "Raleway", sans-serif;
-    color: rgba(134, 41, 55, 0.75);
+    border-radius: 12px;
+    padding: 13px;
+    border: none;
+    background-color: #3d8741;
+    color: white;
     text-align: center;
-    font-size: 18px;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 6px;
 }
+
 /* ----------- Quiz Page */
 ul li {
     list-style: none;
@@ -90,6 +98,16 @@ ul li {
     padding: 40px;
     min-height: 60vh;
     margin: 50px;
+}
+.next {
+    border-radius: 12px;
+    padding: 13px;
+    border: none;
+    background-color: #3d8741;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
 }
 /* ----------- Score Page */
 #congrats {
@@ -115,4 +133,25 @@ ul li {
     padding: 40px;
     min-height: 60vh;
     margin: 50px;
+}
+.try-again {
+    border-radius: 12px;
+    padding: 13px;
+    border: none;
+    background-color: #3d8741;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.send-this {
+    border-radius: 12px;
+    padding: 13px;
+    border: none;
+    background-color: #3d8741;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
 }
