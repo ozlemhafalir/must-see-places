@@ -140,8 +140,7 @@ ul li {
     background-size: cover;
     background-position: center;
     padding: 40px;
-    min-height: 60vh;
-    margin: 50px;
+    width: 50%;
 }
 
 #result {
@@ -149,8 +148,7 @@ ul li {
     background-size: cover;
     background-position: center;
     padding: 40px;
-    min-height: 60vh;
-    margin: 50px;
+    width: 50%;
 }
 
 #chart {
@@ -158,7 +156,6 @@ ul li {
     background-size: cover;
     background-position: center;
     padding: 40px;
-    min-height: 60vh;
     margin: 50px;
 }
 
