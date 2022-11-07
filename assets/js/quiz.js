@@ -2,6 +2,7 @@
 // Get the button elements and add event listeners to them
 let i;
 let correctAnswerCount;
+let wrongAnswerCount;
 document.addEventListener("DOMContentLoaded", function () {
     let username = sessionStorage.getItem("username");
     if (username) {
@@ -24,6 +25,8 @@ function checkAnswer() {
     let selectedOption = document.querySelector('input[name="options"]:checked');
     if (selectedOption.value == i) {
         correctAnswerCount++;
+    } else {
+        wrongAnswerCount++;
     }
     selectedOption.checked = false;
 }
@@ -41,7 +44,8 @@ function setPlace() {
         document.getElementById("option3-label").innerHTML = places[options[2]]["place"];
         document.getElementById("option4-label").innerHTML = places[options[3]]["place"];
     } else {
-        sessionStorage.setItem("score", correctAnswerCount);
+        sessionStorage.setItem("correctAnswerCount", correctAnswerCount);
+        sessionStorage.setItem("wrongAnswerCount", wrongAnswerCount);
         document.location.pathname = "score.html";
     }
 }
@@ -61,6 +65,7 @@ function getRandomOptions(correctOptionIndex) {
 function runGame() {
     i = 0;
     correctAnswerCount = 0;
+    wrongAnswerCount = 0;
     setPlace();
 }
 
