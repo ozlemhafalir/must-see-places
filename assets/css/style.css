@@ -113,6 +113,11 @@ ul li {
     width: 50%;
     display: flex;
 }
+#image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 #options {
     background-color: rgb(65, 105, 225, 0.5);
     background-size: cover;
