@@ -5,10 +5,6 @@ let quizRandomIndexes;
 let correctAnswerCount;
 let wrongAnswerCount;
 document.addEventListener("DOMContentLoaded", function () {
-    let username = sessionStorage.getItem("username");
-    if (username) {
-        document.getElementById("welcome-username").innerHTML = "Welcome " + username;
-    }
     document.getElementById("next-button").addEventListener("click", function () {
         checkAnswer();
         i++;
