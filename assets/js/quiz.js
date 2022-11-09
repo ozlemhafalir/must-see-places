@@ -60,7 +60,7 @@ const places = [
     { "place": "Vancouver", "images": ["assets/img/vancouver/pexels-brayden-law-2096700.jpg", "assets/img/vancouver/pexels-jeremy-lee-11424500.jpg", "assets/img/vancouver/pexels-stephen-tam-11972153.jpg"] }
 ]
 function checkAnswer() {
-    let selectedOption = document.querySelector('input[name="options"]:checked');
+    let selectedOption = document.querySelector("input[name="options"]:checked");
     if (selectedOption.value == quizRandomIndexes[i]) {
         correctAnswerCount++;
     } else {
@@ -85,10 +85,10 @@ function setPlace() {
     } else {
         sessionStorage.setItem("correctAnswerCount", correctAnswerCount);
         sessionStorage.setItem("wrongAnswerCount", wrongAnswerCount);
-        let path = window.location.pathname.split('/');
+        let path = window.location.pathname.split("/");
         path.pop();
         path.push("score.html");
-        window.location.pathname = path.join('/');
+        window.location.pathname = path.join("/");
     }
 }
 function getRandomOptions(correctOptionIndex) {

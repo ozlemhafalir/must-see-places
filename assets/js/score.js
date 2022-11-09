@@ -20,15 +20,15 @@ function drawChart() {
     var correctAnswerCount = sessionStorage.getItem("correctAnswerCount");
     var wrongAnswerCount = sessionStorage.getItem("wrongAnswerCount");
     var data = google.visualization.arrayToDataTable([
-        ['Answer', 'Count'],
-        ['Correct Count', Number(correctAnswerCount)],
-        ['Wrong Count', Number(wrongAnswerCount)],
+        ["Answer", "Count"],
+        ["Correct Count", Number(correctAnswerCount)],
+        ["Wrong Count", Number(wrongAnswerCount)],
     ]);
 
     var options = {
-        title: 'Score',
+        title: "Score",
         is3D: true,
-        backgroundColor: 'transparent',
+        backgroundColor: "transparent",
         colors: ["#e6693e", "#ec8f6e"],
     };
 
