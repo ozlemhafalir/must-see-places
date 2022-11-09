@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("start").addEventListener("click", function () {
         let username = document.getElementById("username").value;
         sessionStorage.setItem("username", username);
-        window.location.pathname = "quiz.html";
+        let path = window.location.pathname.split('/');
+        path.pop();
+        path.push("quiz.html");
+        window.location.pathname = path.join("/");
     });
 });
