@@ -18,13 +18,31 @@ h1 {
     text-align: center;
     font-size: 3em;
     font-weight: bold;
+}
 
+h2 {
+    font-size: 2.5em;
+    padding-right: 5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #E3E3E3;
+    text-align: center;
+    font-weight: 300;
 }
 
 /* ----------- Layout */
 .container {
     max-width: 900px;
     margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex: 1 1 0;
+    min-height: 60vh;
+    margin-bottom: 40px;
 }
 
 /* ----------- Logo */
@@ -35,14 +53,7 @@ header {
     background-color: none;
 }
 
-/* --------- Main */
-main {
-    display: flex;
-    flex: 1 1 0;
-    min-height: 60vh;
-    margin-bottom: 40px;
-}
-
+/* --------- Homepage */
 #greeting {
     background-color: #5d4130;
     background-size: cover;
@@ -61,18 +72,6 @@ main {
 
 .start-game-img {
     margin-top: auto;
-}
-
-h2 {
-    font-size: 2.5em;
-    padding-right: 5px;
-}
-
-h3 {
-    font-size: 1.2em;
-    color: #E3E3E3;
-    text-align: center;
-    font-weight: 300;
 }
 
 .create-username {
@@ -104,11 +103,6 @@ h3 {
 
 
 /* ----------- Quiz Page */
-ul li {
-    list-style: none;
-    text-align: left;
-}
-
 #images {
     background-color: #E6CFC0;
     background-size: cover;
@@ -134,6 +128,15 @@ ul li {
     flex-basis: 100%;
 }
 
+#options ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.options-list {
+    margin-top: 80px;
+}
+
 .next {
     border-radius: 4px;
     padding: 13px;
@@ -146,10 +149,6 @@ ul li {
     margin-top: 6px;
 }
 
-#options-matters {
-    margin-top: 80px;
-}
-
 /* ----------- Score Page */
 #congrats {
     background-color: #998070;
@@ -158,10 +157,12 @@ ul li {
     padding: 40px;
     flex-basis: 100%;
 }
-#username {
+
+h3#username {
     font-size: 22px;
     font-weight: 400;
 }
+
 #last-talk {
     margin-top: 20px;
 }
@@ -200,14 +201,18 @@ ul li {
     color: #774348;
     padding-inline-start: 0;
 }
+
 #social-media-links li {
     list-style-type: none;
     margin: 20px;
     color: #445361;
 }
+
 #social-media-links li a {
     color: #445361;
 }
+
+/* Footer */
 footer {
     color: #445361;
 }
@@ -218,10 +223,6 @@ footer {
         flex-direction: column;
     }
 
-    footer {
-        font-size: .8em;
-    }
-
     #start-game {
         padding: 20px;
     }
@@ -230,7 +231,7 @@ footer {
         padding: 20px;
     }
 
-    #options-matters {
+    .options-list {
         margin-top: 0;
     }
 
@@ -241,8 +242,12 @@ footer {
     #result {
         padding: 20px;
     }
-    
+
     #chart {
         margin: 0;
+    }
+
+    footer {
+        font-size: .8em;
     }
 }

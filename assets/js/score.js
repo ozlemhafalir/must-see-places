@@ -1,5 +1,4 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
+// Wait for the DOM to finish loading before displaying the score message.
 document.addEventListener("DOMContentLoaded", function () {
     let username = sessionStorage.getItem("username");
     if (username) {
@@ -14,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// This is used as reference for displaying pie chart:
+// https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery/piechart.html
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {

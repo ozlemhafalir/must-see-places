@@ -1,17 +1,9 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
+// This is the index that stores which question are we in.
 let i;
+// This is generated when quiz starts, it is list of numbers between 0-number of places
 let quizRandomIndexes;
 let correctAnswerCount;
 let wrongAnswerCount;
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("next-button").addEventListener("click", function () {
-        checkAnswer();
-        i++;
-        setPlace();
-    });
-    runGame();
-});
 const places = [
     { "place": "Angkor Wat", "images": ["assets/img/angkor wat/pexels-ann-zzz-8128721.jpg", "assets/img/angkor wat/pexels-james-wheeler-1534057.jpg"] },
     { "place": "Istanbul", "images": ["assets/img/istanbul/anna-berdnik-0n0AHB1fgTQ-unsplash.jpg", "assets/img/istanbul/pexels-caner-cankisi-3999943.jpg"] },
@@ -59,8 +51,21 @@ const places = [
     { "place": "Tokyo", "images": ["assets/img/tokyo/pexels-pixabay-248195.jpg", "assets/img/tokyo/pexels-pixabay-161251.jpg", "assets/img/tokyo/pexels-janko-ferlic-590478.jpg", "assets/img/tokyo/pexels-aleksandar-pasaric-1510610.jpg"] },
     { "place": "Vancouver", "images": ["assets/img/vancouver/pexels-brayden-law-2096700.jpg", "assets/img/vancouver/pexels-jeremy-lee-11424500.jpg", "assets/img/vancouver/pexels-stephen-tam-11972153.jpg"] }
 ]
+// Wait for the DOM to finish loading before adding event listener to button.
+document.addEventListener("DOMContentLoaded", function () {
+    // Add event listener to next-button.
+    document.getElementById("next-button").addEventListener("click", function () {
+        // When user click next button, first check the answer, then, increment the index and set the next place.
+        checkAnswer();
+        i++;
+        setPlace();
+    });
+    runGame();
+});
+// Function for checking the answer.
 function checkAnswer() {
     let selectedOption = document.querySelector('input[name="options"]:checked');
+    // Compare the user selected option with the index of place we are in.
     if (selectedOption.value == quizRandomIndexes[i]) {
         correctAnswerCount++;
     } else {
@@ -68,10 +73,13 @@ function checkAnswer() {
     }
     selectedOption.checked = false;
 }
+// When the index is incremented, we set values for image and options using this function.
 function setPlace() {
     if (i < quizRandomIndexes.length) {
         let placeIndex = quizRandomIndexes[i];
-        let imgSrc = places[placeIndex]["images"][0];
+        let placeImages = places[placeIndex]["images"];
+        let randomImageIndex = Math.floor(Math.random() * placeImages.length);
+        let imgSrc = placeImages[randomImageIndex];
         document.getElementById("image").setAttribute("src", imgSrc);
         let options = getRandomOptions(placeIndex);
         document.getElementById("option1").value = options[0];
@@ -91,7 +99,9 @@ function setPlace() {
         window.location.pathname = path.join("/");
     }
 }
+// For each question, 3 randomly selected and 1 correct place is generated.
 function getRandomOptions(correctOptionIndex) {
+    // This is used for random unique number generation: https://stackoverflow.com/a/2380113
     var result = [correctOptionIndex];
     while (result.length < 4) {
         var rand = Math.floor(Math.random() * places.length);
@@ -99,12 +109,15 @@ function getRandomOptions(correctOptionIndex) {
             result.push(rand);
         }
     }
+    // When numbers are generated, the correct answer is shuffled before returning.
     result.shift();
     var randomIndex = Math.floor(Math.random() * 4);
     result.splice(randomIndex, 0, correctOptionIndex);
     return result;
 }
+// When the quiz starts, 10 random places are selected for the session.
 function getRandomPlaces() {
+    // This is used for random unique number generation: https://stackoverflow.com/a/2380113
     var result = [];
     while (result.length < 10) {
         var rand = Math.floor(Math.random() * places.length);
@@ -114,6 +127,7 @@ function getRandomPlaces() {
     }
     return result;
 }
+// This function is run with setting initial values.
 function runGame() {
     quizRandomIndexes = getRandomPlaces();
     i = 0;
@@ -121,4 +135,3 @@ function runGame() {
     wrongAnswerCount = 0;
     setPlace();
 }
-
