@@ -158,9 +158,12 @@ ul li {
     padding: 40px;
     width: 50%;
 }
+#username {
+    font-size: 22px;
+    font-weight: 400;
+}
 #last-talk {
     margin-top: 20px;
-
 }
 
 #result {
@@ -175,8 +178,7 @@ ul li {
     background-color: #E6CFC0;
     background-size: cover;
     background-position: center;
-    padding: 40px;
-    margin: 50px;
+    margin: 60px 0;
 }
 
 .try-again {
@@ -191,24 +193,20 @@ ul li {
     margin-top: 6px;
 }
 
-.social-media-container {
-    text-align: left;
-}
 #social-media-links {
-    margin: 40px;
     display: flex;
     justify-content: center;
     font-size: 1.5em;
     color: #774348;
-}
-#social-media-links li:hover {
-    list-style-type: none;
-    margin: 20px;
-    color: #445361;
+    padding-inline-start: 0;
 }
 #social-media-links li {
     list-style-type: none;
     margin: 20px;
+    color: #445361;
+}
+#social-media-links li a {
+    color: #445361;
 }
 footer {
     color: #445361;

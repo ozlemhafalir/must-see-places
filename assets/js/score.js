@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (username) {
         document.getElementById("username").innerHTML = username;
     }
+    var correctAnswerCount = sessionStorage.getItem("correctAnswerCount");
+    var wrongAnswerCount = sessionStorage.getItem("wrongAnswerCount");
+    if (correctAnswerCount > wrongAnswerCount) {
+        document.getElementById("score-message").innerHTML = "Congrats!";
+    } else {
+        document.getElementById("score-message").innerHTML = "Nice try!";
+    }
 });
 
 google.charts.load("current", { packages: ["corechart"] });
@@ -21,6 +28,8 @@ function drawChart() {
     var options = {
         title: 'Score',
         is3D: true,
+        backgroundColor: 'transparent',
+        colors: ["#e6693e", "#ec8f6e"],
     };
 
     var chart = new google.visualization.PieChart(document.getElementById("chart"));
