@@ -43,7 +43,7 @@ main {
 }
 
 #greeting {
-    background-color: #998070;
+    background-color: #5d4130;
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -130,7 +130,7 @@ ul li {
     padding-left: 40px;
     width: 50%;
     display: block;
-    
+
 }
 
 .next {
@@ -144,21 +144,26 @@ ul li {
     font-size: 16px;
     margin-top: 6px;
 }
+
 #options-matters {
     margin-top: 80px;
 }
 
 /* ----------- Score Page */
 #congrats {
-    background-color: rgb(0, 100, 0, 0.5);
+    background-color: #998070;
     background-size: cover;
     background-position: center;
     padding: 40px;
     width: 50%;
 }
+#last-talk {
+    margin-top: 20px;
+
+}
 
 #result {
-    background-color: rgb(65, 105, 225, 0.5);
+    background-color: #E6CFC0;
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -166,7 +171,7 @@ ul li {
 }
 
 #chart {
-    background-color: rgb(65, 105, 225, 0.5);
+    background-color: #E6CFC0;
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -174,28 +179,36 @@ ul li {
 }
 
 .try-again {
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 13px;
     border: none;
-    background-color: #3d8741;
-    color: white;
+    background-color: #445361;
+    color: #FFF1E7;
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin-bottom: 4px;
+    margin-top: 6px;
 }
 
-.send-this {
-    border-radius: 12px;
-    padding: 13px;
-    border: none;
-    background-color: #3d8741;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
+.social-media-container {
+    text-align: left;
 }
-
+#social-media-links {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #774348;
+}
+#social-media-links li:hover {
+    list-style-type: none;
+    margin: 20px;
+    color: #445361;
+}
+#social-media-links li {
+    list-style-type: none;
+    margin: 20px;
+}
 footer {
     color: #445361;
 }
