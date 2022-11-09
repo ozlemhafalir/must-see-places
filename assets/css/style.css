@@ -38,6 +38,7 @@ header {
 /* --------- Main */
 main {
     display: flex;
+    flex: 1 1 0;
     min-height: 60vh;
     margin-bottom: 40px;
 }
@@ -47,7 +48,7 @@ main {
     background-size: cover;
     background-position: center;
     padding: 40px;
-    width: 50%;
+    flex-basis: 100%;
 }
 
 #start-game {
@@ -55,7 +56,7 @@ main {
     background-size: cover;
     background-position: center;
     padding: 130px 40px 40px 40px;
-    width: 50%;
+    flex-basis: 100%;
 }
 
 .start-game-img {
@@ -113,8 +114,8 @@ ul li {
     background-size: cover;
     background-position: center;
     padding: 40px;
-    width: 50%;
     display: flex;
+    flex-basis: 100%;
 }
 
 #image {
@@ -129,9 +130,8 @@ ul li {
     background-position: center;
     padding: 80px;
     padding-left: 40px;
-    width: 50%;
     display: block;
-
+    flex-basis: 100%;
 }
 
 .next {
@@ -156,7 +156,7 @@ ul li {
     background-size: cover;
     background-position: center;
     padding: 40px;
-    width: 50%;
+    flex-basis: 100%;
 }
 #username {
     font-size: 22px;
@@ -171,7 +171,7 @@ ul li {
     background-size: cover;
     background-position: center;
     padding: 40px;
-    width: 50%;
+    flex-basis: 100%;
 }
 
 #chart {
@@ -210,4 +210,39 @@ ul li {
 }
 footer {
     color: #445361;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: .8em;
+    }
+
+    #start-game {
+        padding: 20px;
+    }
+
+    #options {
+        padding: 20px;
+    }
+
+    #options-matters {
+        margin-top: 0;
+    }
+
+    #congrats {
+        padding-top: 0;
+    }
+
+    #result {
+        padding: 20px;
+    }
+    
+    #chart {
+        margin: 0;
+    }
 }
