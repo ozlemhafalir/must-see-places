@@ -59,7 +59,7 @@ main {
 }
 
 .start-game-img {
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 h2 {
@@ -89,16 +89,17 @@ h3 {
 }
 
 .lets-go {
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 13px;
     border: none;
-    background-color: #3F9499;
+    background-color:  #445361;
     color: #FFF1E7;
     text-align: center;
     display: inline-block;
     font-size: 16px;
     margin-top: 6px;
 }
+
 
 /* ----------- Quiz Page */
 ul li {
