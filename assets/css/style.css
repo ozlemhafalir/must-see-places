@@ -89,10 +89,10 @@ h3 {
 }
 
 .lets-go {
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 13px;
     border: none;
-    background-color:  #445361;
+    background-color: #445361;
     color: #FFF1E7;
     text-align: center;
     display: inline-block;
@@ -104,40 +104,48 @@ h3 {
 /* ----------- Quiz Page */
 ul li {
     list-style: none;
+    text-align: left;
 }
 
 #images {
-    background-color: rgb(0, 100, 0, 0.5);
+    background-color: #E6CFC0;
     background-size: cover;
     background-position: center;
     padding: 40px;
     width: 50%;
     display: flex;
 }
+
 #image {
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
+
 #options {
-    background-color: rgb(65, 105, 225, 0.5);
+    background-color: #998070;
     background-size: cover;
     background-position: center;
     padding: 80px;
     padding-left: 40px;
     width: 50%;
-   
+    display: block;
+    
 }
 
 .next {
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 13px;
     border: none;
-    background-color: #3d8741;
-    color: white;
+    background-color: #445361;
+    color: #FFF1E7;
     text-align: center;
     display: inline-block;
     font-size: 16px;
+    margin-top: 6px;
+}
+#options-matters {
+    margin-top: 80px;
 }
 
 /* ----------- Score Page */
@@ -187,6 +195,7 @@ ul li {
     display: inline-block;
     font-size: 16px;
 }
+
 footer {
-    color:  #445361;
+    color: #445361;
 }
