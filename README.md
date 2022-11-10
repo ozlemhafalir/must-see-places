@@ -62,9 +62,12 @@ There is no known bugs in this project.
 ## Credits
 ### Media
 
-**Gallery images:**
+**Quiz images:**
 
+*Quiz images were taken from https://www.pexels.com/ and https://unsplash.com/
 
+**Home Page and Score page images:**
+*These two illustrations were taken from https://www.freepik.com/vectors/travel-illustration
 
 # References
 
