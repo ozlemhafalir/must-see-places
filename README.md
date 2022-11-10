@@ -1,6 +1,6 @@
 # Must See Places
 
-Must See Places is a quiz website that encourages people to learn new places and help them to create their travel bucket lists.
+[Must See Places](https://ozlemhafalir.github.io/must-see-places/) is a quiz website that encourages people to learn new places and help them to create their travel bucket lists.
 
 ![Homepage Responsive Screenshot](https://ozlemhafalir.github.io/must-see-places/assets/readme/screenshot-devices.png)
 
@@ -30,8 +30,40 @@ Must See Places is a quiz website that encourages people to learn new places and
 
 ![Score Page Screenshot](https://ozlemhafalir.github.io/must-see-places/assets/readme/screenshot-score.png)
 
-### About Us
-* At the about us page, using the banner, more information is displayed about who we are, including a contact information that users can reach out for more information.
+
+## Deployment
+* This website runs on Github Pages: https://ozlemhafalir.github.io/must-see-places/
+* When a change is pushed to main branch, the change is automatically deployed to running website.
+* The configuration for Github Pages is under Settings of the repository.
+
+
+## Testing
+✅ Tested that the website works in all major browsers (Chrome, Firefox, Safari, Edge).
+
+✅ Tested that the website works for different screen sizes.
+
+✅ Tested that the images and redirections are not broken.
+
+## Bugs
+There is no known bugs in this project.
+
+## Validator Testing
+* HTML
+    ✅ All the pages are checked with HTML validator: https://validator.w3.org/nu/. No error or warning found.
+* CSS
+    ✅ The website css is checked with the validator: https://jigsaw.w3.org/css-validator/. No error found.
+* Accessibility
+    * All the pages received outstanding scores when run through lighthouse:
+    ![Homepage Lighthouse](https://ozlemhafalir.github.io/ceramiclife/assets/readme/lighthouse-homepage.png)
+    ![Quiz Page Lighthouse](https://ozlemhafalir.github.io/ceramiclife/assets/readme/lighthouse-quiz.png)
+    ![Score Page Lighthouse](https://ozlemhafalir.github.io/ceramiclife/assets/readme/lighthouse-score.png)
+
+
+## Credits
+### Media
+
+**Gallery images:**
+
 
 
 # References
