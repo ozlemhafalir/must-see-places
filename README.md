@@ -54,9 +54,9 @@ There is no known bugs in this project.
     ✅ The website css is checked with the validator: https://jigsaw.w3.org/css-validator/. No error found.
 * Accessibility
     * All the pages received outstanding scores when run through lighthouse:
-    ![Homepage Lighthouse](https://ozlemhafalir.github.io/ceramiclife/assets/readme/lighthouse-homepage.png)
-    ![Quiz Page Lighthouse](https://ozlemhafalir.github.io/ceramiclife/assets/readme/lighthouse-quiz.png)
-    ![Score Page Lighthouse](https://ozlemhafalir.github.io/ceramiclife/assets/readme/lighthouse-score.png)
+    ![Homepage Lighthouse](https://ozlemhafalir.github.io/must-see-places/assets/readme/lighthouse-homepage.png)
+    ![Quiz Page Lighthouse](https://ozlemhafalir.github.io/must-see-places/assets/readme/lighthouse-quiz.png)
+    ![Score Page Lighthouse](https://ozlemhafalir.github.io/must-see-places/assets/readme/lighthouse-score.png)
 
 
 ## Credits
