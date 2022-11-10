@@ -66,9 +66,9 @@ There is no known bugs in this project.
 
 *Quiz images were taken from https://www.pexels.com/ and https://unsplash.com/
 
-**Home Page and Score page images:**
+**Home Page and Score page illustrations:**
 *These two illustrations were taken from https://www.freepik.com/vectors/travel-illustration
 
 # References
-
-* https://ui.dev/amiresponsive for screenshot of website on different devices
+* https://developers.google.com/chart for score page.
+* https://ui.dev/amiresponsive for screenshot of website on different devices.
